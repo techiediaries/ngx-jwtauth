@@ -1,0 +1,32 @@
+{
+  "name": "@techiediaries/ngx-jwtauth",
+  "version": "0.0.1",
+  "description": "An Angular 4.3+ for JWT Authentication",
+  "homepage": "https://www.techiediaries.com/ngx-jwtauth",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techiediaries/ngx-qrcode"
+  },
+  "author": {
+    "name": "Ahmed Bouchefra",
+    "email": "techiediaries9@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "jwt",
+    "auth"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/techiediaries/ngx-jwtauth/issues"
+  },
+  "module": "ngx-jwtauth.js",
+  "typings": "ngx-jwtauth.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.3.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "dependencies": {  
+  }
+}
