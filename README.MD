@@ -39,7 +39,7 @@ import { JWTAuthModule } from '@techiediaries/ngx-jwtauth';
 })
 export class AppModule { }
 
-```bash
+```
 
 
 
