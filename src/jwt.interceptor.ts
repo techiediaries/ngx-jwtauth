@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class JWTInterceptor implements HttpInterceptor {
       authPrefix : string = 'Bearer';
-        
+
       getToken: () => string = () => {
           return localStorage.getItem("token");
       };  
@@ -16,13 +16,13 @@ export class JWTInterceptor implements HttpInterceptor {
       intercept(request: HttpRequest<any>,next: HttpHandler): Observable<HttpEvent<any>> {
         
         const token = this.getToken();
-        var isTokenExpired = this.jwtUtils.isJWTExpired();
+        var isTokenExpired = false;
         //console.log("Adding Auth Headers " + `Bearer ${token}`);
         if(isTokenExpired){
             request = request.clone();
         }else{
             request = request.clone({
-                setHeaders: {"Authorization": `${this.authPrefix}${token}`}
+                setHeaders: {"Authorization": `${this.authPrefix} ${token}`}
             });
         }
 

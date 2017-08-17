@@ -2,8 +2,12 @@
 
 This is an Angular 4.3+ library for attaching a JSON Web Token to each HttpClient requests .
 
+
 ## Demo 
-A simple [demo](https://www.techiediaries.com/demos/ngx-jwtauth/)
+
+You can find a [demo project in this repo](https://github.com/techiediaries/angular-jwtauth-demo)
+
+An online simple [demo](https://www.techiediaries.com/demos/ngx-jwtauth/)
 
 
 ## Installation
